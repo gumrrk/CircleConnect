@@ -1,0 +1,359 @@
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+        background-color: var(--color-white);
+    }
+
+    main {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .img_userPost {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .main_top {
+        position: relative;
+        margin-top: 7.75rem;
+    }
+
+    .div_userPost {
+        display: flex;
+    }
+
+    .div_userPost-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div_userPost {
+        display: flex;
+        flex-direction: row;
+        height: 3.25rem;
+        width: 11.75rem;
+        gap: .75rem;
+        align-items: center;
+        bottom: 2.5rem;
+    }
+
+    .div_userPost-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .suggestions {
+        position: relative;
+        margin-top: 2.5rem;
+    }
+
+    .ul_suggestions {
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        gap: 3.8125rem;
+        margin-top: 3.9375rem;
+        height: 100%;
+        overflow-x: scroll;
+    }
+
+    .input_userPost {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .main_posts {
+        margin-bottom: 2rem;
+    }
+
+    .div-post-1 {
+        margin-top: 3.125rem;
+    }
+
+    .div-post-2 {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .div-likes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: .4375rem;
+    }
+
+    .svg-post {
+        height: 1.4225rem;
+        align-self: center;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        background-color: var(--color-white);
+    }
+
+    main {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 6.25rem;
+        right: 6.25rem;
+    }
+
+    .img_userPost {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .main_top {
+        position: relative;
+        margin-top: 7.75rem
+    }
+
+    .div_userPost {
+        display: flex;
+        max-width: 44.5625rem;
+    }
+
+    .div_userPost-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div_userPost {
+        display: flex;
+        flex-direction: row;
+        height: 3.25rem;
+        width: 11.75rem;
+        gap: .75rem;
+        align-items: center;
+        bottom: 2.5rem;
+    }
+
+    .div_userPost-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .suggestions {
+        position: relative;
+        margin-top: 2.5rem;
+    }
+
+    .ul_suggestions {
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        gap: 3.8125rem;
+        margin-top: 3.9375rem;
+        height: 100%;
+        overflow-x: scroll;
+    }
+
+    .input_userPost {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .main_posts {
+        margin-bottom: 2rem;
+    }
+
+    .div-post-1 {
+        margin-top: 3.125rem;
+    }
+
+    .div-post-2 {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .div-likes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: .4375rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 100%;
+        background-color: var(--color-white);
+    }
+
+    main {
+        max-width: 100%;
+        position: absolute;
+        left: 6.25rem;
+        right: 6.25rem;
+    }
+
+    .img_userPost {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .main_top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        grid-column-gap: 7.9375rem;
+        position: relative;
+        margin-top: 7.75rem
+    }
+
+    .div_userPost-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div_userPost {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: row;
+        height: 3.25rem;
+        width: 11.75rem;
+        gap: .75rem;
+        align-items: center;
+        bottom: 2.5rem;
+    }
+
+    .div_userPost-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .suggestions {
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        position: relative;
+        max-width: 26rem;
+    }
+
+    .li_suggestions {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-right: .625rem;
+    }
+
+    .ul_suggestions {
+        display: flex;
+        flex-direction: column;
+        height: 18rem;
+        overflow-y: auto;
+        gap: 3.8125rem;
+        margin-top: 3.9375rem;
+        overflow-x: hidden;
+    }
+
+    .main_posts {
+        margin-bottom: 3rem;
+    }
+
+    .article-post {
+        max-width: 43.75rem;
+    }
+
+    .div-post-1 {
+        margin-top: 3.125rem;
+    }
+
+    .div-post-2 {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .div-likes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: .4375rem;
+    }
+
+    .svg-post {
+        height: 1.25rem;
+        align-self: center;
+    }
+
+    .svg-post:hover {
+        animation: tremor 0.4s infinite;
+    }
+
+    @keyframes tremor {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(5deg);
+        }
+
+        40% {
+            transform: rotate(-5deg);
+        }
+
+        60% {
+            transform: rotate(5deg);
+        }
+
+        80% {
+            transform: rotate(-5deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* Estilização da barra de rolagem */
+
+    *::-webkit-scrollbar {
+        margin-top: 1.875rem;
+        height: .625rem;
+        cursor: pointer;
+        background-color: var(--color-grey-header);
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: var(--color-grey-4);
+        margin-top: 4rem;
+        cursor: pointer;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--color-grey-3);
+        border-radius: .3125rem;
+        cursor: pointer;
+    }
+}

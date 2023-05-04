@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src\icon\icon.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+  <!-- JAVASCRIPT -->
+  <script type="module" src="./src/scripts/index.js"></script>
+  <script type="module" src="./src/scripts/modal.js"></script>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <title>CircleConnect</title>
+</head>
+
+<body>
+  <header>
+    <p class="header_title">CircleConnect</p>
+    <p class="header_exit">Sair</p>
+  </header>
+  <main>
+    <section class="main_top">
+      <ul class="user_userPost" id="user_userPost">
+      </ul>
+      <nav class="input_userPost">
+        <input type="text" class="input-title_userPost" placeholder="Digitar título do post">
+        <input type="text" class="input-post_userPost" placeholder="Digitar descrição do post">
+        <button type="submit" class="button_userPost">Postar</button>
+      </nav>
+      <section class="suggestions">
+        <h2 class="title_suggestions">Sugestões para você seguir</h2>
+        <ul class="ul_suggestions" id="ul_suggestions"></ul>
+      </section>
+    </section>
+    <section class="main_bottom">
+      <div class="main_posts">
+        <h1 class="h1_posts">Posts</h1>
+        <ul class="ul_posts" id="ul_posts">
+        </ul>
+        <dialog class="modalDialog">
+          <div class="modalContainer" id="modalContainer">
+          </div>
+        </dialog>
+        <button id="dark-button">🌙</button>
+      </div>
+    </section>
+    </div>
+  </main>
+</body>
+
+</html>
