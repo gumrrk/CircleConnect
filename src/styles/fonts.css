@@ -41,7 +41,7 @@ main .button_userPost {
     font-family: 'Inter', sans-serif;
     font-size: var(--font-size-5);
     font-weight: var(--font-weight-2);
-    color: var(--color-grey-3);
+    color: var(--color-grey-header);
     white-space: nowrap;
 }
 
