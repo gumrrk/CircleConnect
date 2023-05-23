@@ -1,6 +1,6 @@
 import { principalUser, posts, suggestUsers } from "./database.js"
 
-// Função que renderiza o card do usuário ativo;
+
 function renderPrincipalUser(ul, array) {
     let userPost = document.querySelector('#' + ul);
 
@@ -33,7 +33,7 @@ function renderPrincipalUser(ul, array) {
 }
 renderPrincipalUser('user_userPost', principalUser)
 
-// Função que renderiza as sugestões
+
 function renderSuggestions(array) {
     let listSuggestions = document.querySelector('#ul_suggestions')
     for (let i = 0; i < array.length; i++) {
@@ -77,7 +77,7 @@ function renderSuggestions(array) {
 }
 renderSuggestions(suggestUsers)
 
-// Função que renderiza os posts
+
 function renderPosts(array) {
     const ulPosts = document.querySelector('#ul_posts')
     for (let i = 0; i < array.length; i++) {
@@ -130,7 +130,7 @@ function renderPosts(array) {
 }
 renderPosts(posts);
 
-// Função que altera o estilo do botão 'Seguir' quando clicado
+
 function followUser() {
     const buttons = document.querySelectorAll('.follow_user');
 
@@ -147,7 +147,7 @@ function followUser() {
 }
 followUser();
 
-// Função que altera o svg da img deslike.svg (cinza) para like.svg (vermelho)
+
 function likePost() {
     const imgs = document.querySelectorAll('.svg-post');
     imgs.forEach((img) => {
@@ -156,7 +156,7 @@ function likePost() {
             const srcNovo = (srcAtual === './src/assets/img/deslike.svg') ? './src/assets/img/like.svg' : './src/assets/img/deslike.svg';
             this.setAttribute('src', srcNovo);
 
-            // Funcionalidade que aumenta e diminui o contador de "likes"
+            
             const likesCount = this.parentNode.querySelector('.likes-post');
             let count = parseInt(likesCount.textContent);
             if (srcNovo === './src/assets/img/like.svg') {
@@ -170,7 +170,7 @@ function likePost() {
 }
 likePost();
 
-// Função que aplica um ID único a cada botão (em ordem crescente)
+
 function apllyID() {
     const buttons = document.querySelectorAll('.button-post');
     let contador = 1;
@@ -181,11 +181,11 @@ function apllyID() {
 }
 apllyID()
 
-// Função responsável por alterar o tema da página entre claro e escuro
+
 function changeMode() {
     const body = document.body;
     if (body.classList.contains('dark-mode')) {
-        // Modo claro
+        
         document.documentElement.style.setProperty('--color-grey-0', '#0A0C0D');
         document.documentElement.style.setProperty('--color-grey-1', '#212529');
         document.documentElement.style.setProperty('--color-grey-2', '#495057');
@@ -201,7 +201,7 @@ function changeMode() {
         document.getElementById("dark-button").innerHTML = "🌙";
         body.classList.remove('dark-mode');
     } else {
-        // Modo escuro
+        
         document.documentElement.style.setProperty('--color-grey-0', '#F2F2F2');
         document.documentElement.style.setProperty('--color-grey-1', '#F8F9FA');
         document.documentElement.style.setProperty('--color-grey-2', '#CED4DA');
@@ -219,7 +219,7 @@ function changeMode() {
     }
 }
 
-// Função que adiciona a função anterior ao botão de mudar tema no HTML
+
 function addDarkButton() {
     const button = document.querySelector('#dark-button')
     button.addEventListener('click', changeMode)

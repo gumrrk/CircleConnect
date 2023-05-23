@@ -1,4 +1,4 @@
-// Funcão que renderiza o Modal de acordo com seu ID, removendo algumas partes desnecessárias e aplicando um novo estilo à div
+
 function renderModal() {
     const buttons = document.querySelectorAll('.button-post');
     const modalContainer = document.querySelector('#modalContainer');
@@ -28,7 +28,7 @@ function renderModal() {
 
             modalContainer.innerHTML = postContainer.innerHTML;
 
-            // Funcionalidade que renderiza um botão para fechar o modal
+            
             const closeButton = document.createElement('button');
             closeButton.innerHTML = '&#x2716;';
             closeButton.addEventListener('click', function () {
